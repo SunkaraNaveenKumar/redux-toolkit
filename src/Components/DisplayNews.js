@@ -9,7 +9,6 @@ const DisplayNews = () => {
   const { isLoading } = useSelector((state) => {
     return state.hnSearchData;
   });
-  console.log(hitsList);
   return (
     <>
       {isLoading ? (

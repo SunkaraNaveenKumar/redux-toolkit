@@ -18,7 +18,6 @@ const NewsDetails = () => {
     dispatch(getNewsDetails(id));
     dispatch(addSearchText(""));
   }, [id]);
-  console.log("newsDetails", newsDetails);
   return (
     <>
       {isLoading ? (

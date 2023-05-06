@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import Navigation from "./Components/Navigation";
-import DisplayNews from "./Components/DisplayNews";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getInitialData } from "./Store/Slices/hnSearchSlice";
