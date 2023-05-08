@@ -17,7 +17,7 @@ const NewsDetails = () => {
   useEffect(() => {
     dispatch(getNewsDetails(id));
     dispatch(addSearchText(""));
-  }, [id]);
+  }, [id,dispatch]);
   return (
     <>
       {isLoading ? (
