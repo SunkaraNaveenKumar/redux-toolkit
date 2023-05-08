@@ -12,14 +12,17 @@ const SearchBar = () => {
     dispatch(getSearchData(value));
   };
   return (
-    <div className="flex flex-row h-7 bg-white rounded-lg overflow-hidden">
-      <input
-        className="focus:outline-none pl-5 w-80"
-        value={searchText}
-        placeholder="Enter the text here..."
-        onChange={handleSearchText}
-      ></input>
-      <img src={searchIcon} alt="Error"/>
+    <div className="flex flex-row gap-10">
+      <h2 className="font-bold text-lg">HN NEWS Search</h2>
+      <div className="flex flex-row h-7 bg-white rounded-lg overflow-hidden">
+        <input
+          className="focus:outline-none pl-5 w-80"
+          value={searchText}
+          placeholder="Enter the text here..."
+          onChange={handleSearchText}
+        ></input>
+        <img src={searchIcon} alt="Error" />
+      </div>
     </div>
   );
 };
