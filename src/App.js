@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navigation from "./Components/Navigation";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -12,7 +11,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getInitialData());
-  }, []);
+  }, [dispatch]);
   return (
     <div>
       <Navigation />

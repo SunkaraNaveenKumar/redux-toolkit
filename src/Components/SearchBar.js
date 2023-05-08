@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import searchIcon from "../assets/search.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { addSearchText, getSearchData } from "../Store/Slices/hnSearchSlice";
@@ -20,7 +19,7 @@ const SearchBar = () => {
         placeholder="Enter the text here..."
         onChange={handleSearchText}
       ></input>
-      <img src={searchIcon} />
+      <img src={searchIcon} alt="Error"/>
     </div>
   );
 };

@@ -26,7 +26,7 @@ const DisplayNews = () => {
                   >
                     {title}
                   </Link>
-                  <a className="opacity-60" target="_blank" href={url}>
+                  <a className="opacity-60" target="_blank" href={url} rel="noreferrer">
                     {url}
                   </a>
                 </div>
